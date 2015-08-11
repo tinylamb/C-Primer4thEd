@@ -1,0 +1,11 @@
+*
+!*/
+!.gitignore
+!*.[ch]
+!*.cpp
+!makefile
+
+
+# C extensions
+*.so
+*.o
