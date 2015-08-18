@@ -48,7 +48,8 @@ void string_add(){
 void string_to_uint32(){
     string sNum = "n1234name56789";
     char *t;
-    uint32_t dwNum = strtoul(sNum.c_str(), &t, 10);
+    uint32_t dwNum = strtoul(sNum.c_str(), &t, 10); //包括头文件#include <cstdlib>
+
     if(sNum == t){
         cout << "failed." << endl;
         cout << "dwNum :" << dwNum; //失败的话dwNum ＝ 0
