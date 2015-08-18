@@ -12,7 +12,7 @@ void string_to_uint32();
 
 int main(){
 //    string_empty();
-    string_to_uint32();
+
     return 0;
 }
 
