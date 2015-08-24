@@ -19,11 +19,15 @@
 #include <iostream>
 #include <vector>
 #include <stdexcept>
+using namespace std;
 
 void outofrange();
+void vectorrefer(vector<int> &vec);
 
 int main(){
-    outofrange();
+    vector<int> v(10);
+    vectorrefer(v);
+    cout << "vec value of v(0) : " << v.at(0) << endl;
     return 0;
 }
 
@@ -36,4 +40,8 @@ void outofrange(){
         std::cerr << "out of range error : " << oor.what() << std::endl;
     }
 
+}
+
+void vectorrefer(vector<int> &vec){
+    vec.at(0) = 1;
 }

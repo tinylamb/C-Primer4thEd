@@ -9,9 +9,11 @@ void string_empty();
 void num_to_string();
 void string_add();
 void string_to_uint32();
+void string_find();
 
 int main(){
 //    string_empty();
+    string_find();
 
     return 0;
 }
@@ -63,4 +65,11 @@ void string_to_uint32(){
     //取值的范围 0 ~ 2^32-1
     //123name45678 返回123  t指针指向字符n
 
+}
+
+void string_find(){
+    string s = "aoyang";
+    size_t position = s.find("a", 0);
+    cout << "a position is : " << position << endl;
+    
 }
