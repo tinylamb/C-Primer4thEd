@@ -5,6 +5,9 @@
 #include <cstdlib>
 using namespace std;
 
+#define NUMBER 0x100
+
+
 void string_empty();
 void num_to_string();
 void string_add();
@@ -12,8 +15,7 @@ void string_to_uint32();
 void string_find();
 
 int main(){
-//    string_empty();
-    string_find();
+    num_to_string();
 
     return 0;
 }
@@ -32,7 +34,7 @@ void num_to_string(){
     uint32_t dwInteger;
     dwInteger = 2134242112;
     ostringstream ss;
-    ss << dwInteger;
+    ss << NUMBER;
     s = ss.str();
     cout << s << endl;
     //s += 4.5;
