@@ -10,8 +10,10 @@ using namespace std;
 void floatcompute();
 
 void transform();
+
+void unsignedtoint();
 int main(){
-    transform();
+    unsignedtoint();
 }
 
 void floatcompute(){
@@ -54,4 +56,13 @@ void transform(){
 
 
 
+}
+
+void unsignedtoint(){
+    int iInt;
+    uint32_t dwI = 10, dwJ = 20, dwK;
+    iInt = dwI - dwJ;
+    dwK = dwI - dwJ;
+    cout << iInt << endl;
+    cout << dwK << endl;
 }
