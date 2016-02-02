@@ -1,10 +1,9 @@
 CC=clang++
 CFLAGS=-Wall -g -O3 
 LINKERFLAGS = -lz 
-#-stdlib=libc++
 INCLUDE=-I. -I
-#-I/usr/local/include
 VPATH=.:
+
 OBJS=main.o
 OUTPUT=main
 
